@@ -9,15 +9,19 @@ import img3 from "../assets/Group 1230.png"
 
 function Firstsection() {
     const [modalVisible, setModalVisible] = useState(false);
-    // const [modalVisiblee, setModalVisiblee] = useState(false);
+    const [modalVisiblee, setModalVisiblee] = useState(false);
 
     const handleModalToggle = () => {
         setModalVisible(!modalVisible);
     };
 
-    // const handleModalTogglee = () => {
-    //     setModalVisiblee(!modalVisiblee);
-    // };
+
+    const handleModalTogglee = () => {
+        setModalVisiblee(!modalVisiblee);
+    };
+
+
+
     return (
         <div className='Firstsection'>
             <img src={logo} alt="" className='logo' />
@@ -37,7 +41,7 @@ function Firstsection() {
             <div className="middle">
                 <button><img src={img1} alt="..." /></button>
                 <button onClick={handleModalToggle}><img src={img2} alt="..." /></button>
-                <button onClick={handleModalToggle}><img src={img3} alt="..." /></button>
+                <button onClick={handleModalTogglee}><img src={img3} alt="..." /></button>
             </div>
 
             <div className="right-card">
@@ -59,12 +63,12 @@ function Firstsection() {
                 <div className="btns">
                     <input type="text" name='text' placeholder='Ваш имя' />
                     <input type="number" name="number" placeholder='Ваш телефон' />
-                    <button style={{ display: modalVisible ? 'none' : 'block' }}>Оформить заявку</button>
+                    <button >Оформить заявку</button>
                     <span>Ваши данные не будут переданы 3-им лицам</span>
                 </div>
             </div>
 
-            <div className="modal-card" style={{ zIndex: modalVisible ? 1000 : -1000 }}>
+            <div className="modal-card" style={{ display: modalVisible ? 'block' : 'none', zIndex: '100', marginTop: '-100px' }}>
                 <div className="modal-cart">
                     <h1>25% скидка на услугу.</h1>
                     <h2>До конца акции осталось <br />
@@ -74,26 +78,26 @@ function Firstsection() {
                 </div>
             </div>
 
-            <div className="modalst-card" style={{ zIndex: modalVisible ? 1000 : -1000 }}>
-                <div className="modalst-cart">
-                    <h1>Перезвоним вам в течение <span>3 минут</span> </h1>
+            <div className="modalnd-card" style={{ display: modalVisiblee ? 'block' : 'none' }}>
+                <div className="modalnd-cart">
+                    <h1 >Перезвоним вам в течение <span>3 минут</span> </h1>
 
                     <input type="text" name='text' placeholder='Введите телефон' />
-                    <button onClick={handleModalToggle}>Перезвоните мне!</button>
+                    <button onClick={handleModalTogglee}>Перезвоните мне!</button>
                 </div>
             </div>
 
 
-            <div className="modalst-card" style={{ zIndex: modalVisible ? 1000 : -1000 }}>
+            <div className="modalst-card" style={{ display: modalVisible ? 'block' : 'none', position: 'fixed', zIndex: '100', top: '0' }}>
                 <div className="modalst-cart">
-                    <h1><span>Перезвоним вам в течение 3 минут</span> </h1>
-                    <h2>До конца акции осталось <br />
+                    <h1><span>25% скидка на услугу.</span> </h1>
+                    <h2>До конца акции осталось
                         5 часов 10 минут.</h2>
                     <input type="text" name='text' placeholder='Введите телефон' />
                     <button onClick={handleModalToggle}>Перезвоните мне!</button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

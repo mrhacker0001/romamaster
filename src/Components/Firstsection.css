@@ -13,7 +13,6 @@ a {
     display: flex;
     padding: 0 30px;
     background: linear-gradient(181.12deg, #2E2F62 1.92%, #13143D 98.08%);
-    /* overflow: hidden; */
 }
 
 .logo {
@@ -213,16 +212,14 @@ a {
 }
 
 .modal-card {
-    width: 100%;
+    width: 110%;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
     backdrop-filter: blur(30px);
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    right: 0;
 }
 
 .modal-cart {
@@ -235,6 +232,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 4%;
+    margin: 15% 35%;
 }
 
 .modal-cart h1 {
@@ -275,6 +273,14 @@ a {
     font-size: 32px;
     text-align: center;
     color: #fff;
+}
+
+.modalst-cart {
+    display: none;
+}
+
+.modalnd-cart{
+    display: none;
 }
 
 
@@ -505,82 +511,132 @@ a {
         width: 170%;
     }
 
-    .modal-card,
-    .modalst-card {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        right: 0;
-        backdrop-filter: blur(30px);
-        /* z-index: -100; */
-        position: fixed;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .modal-card {
+        display: none;
     }
 
-    .modal-cart,
-    .modalst-cart {
-        width: 90%;
-        height: 35%;
-        background-color: #fff;
-        border-radius: 40px;
+    .modal-cart {
+        display: none;
+    }
+
+
+
+    .modalnd-card {
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        height: 101vh;
+        margin-top: -100px;
+        backdrop-filter: blur(20px);
+    }
+
+
+    .modalnd-cart {
+        width: 80%;
+        height: 30%;
+        background: #fff;
+        margin: 64% 10%;
+        border-radius: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 4%;
+        gap: 5%;
     }
 
-    .modal-cart h1,
-    .modalst-cart h1 {
-        font-family: Ubuntu;
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .modal-cart h2,
-    .modalst-cart h2 {
-        font-family: Ubuntu;
-        font-size: 22px;
-        line-height: 32px;
-        text-align: center;
-        color: rgba(0, 0, 0, 1);
-    }
-
-    .modal-cart h1 span,
-    .modalst-cart h1 span {
-        color: red;
-    }
-
-
-    .modal-cart input,
-    .modalst-cart input {
-        width: 80%;
+    .modalnd-cart input {
+        width: 85%;
         height: 20%;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        background: rgba(244, 244, 244, 1);
         outline: none;
+        padding-left: 30px;
+        background: rgba(244, 244, 244, 1);
+        border: 1px solid rgba(0, 0, 0, 0.2)
+    }
+
+    .modalnd-cart button {
+        width: 85%;
+        height: 20%;
+        border: none;
+        background: none;
+        background: rgba(254, 77, 77, 1);
 
         font-family: Ubuntu;
         font-size: 18px;
-        padding-left: 50px;
-    }
-
-    .modal-cart button,
-    .modalst-cart button {
-        width: 80%;
-        height: 20%;
-        background: rgba(254, 77, 77, 1);
-        border: none;
-
-
-        font-family: Ubuntu;
-        font-size: 24px;
         text-align: center;
         color: #fff;
     }
 
+    .modalnd-cart h1 {
+        font-family: Ubuntu;
+        font-size: 18px;
+        text-align: center;
+    }
 
+    .modalnd-cart h1 span {
+        font-family: Ubuntu;
+        font-size: 18px;
+        text-align: center;
+        color: red;
+    }
+
+
+    .modalst-card {
+        width: 100%;
+        height: 101vh;
+        backdrop-filter: blur(20px);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+
+    .modalst-cart {
+        width: 80%;
+        height: 30%;
+        background: #fff;
+        margin: 64% 10%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+
+    .modalst-cart input {
+        width: 85%;
+        height: 20%;
+        outline: none;
+        padding-left: 30px;
+        background: rgba(244, 244, 244, 1);
+        border: 1px solid rgba(0, 0, 0, 0.2)
+    }
+
+    .modalst-cart button {
+        width: 85%;
+        height: 20%;
+        border: none;
+        background: none;
+        background: rgba(254, 77, 77, 1);
+
+        font-family: Ubuntu;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .modalst-cart h2 {
+        width: 64%;
+        font-family: Ubuntu;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .modalst-cart h1 span {
+        font-family: Ubuntu;
+        font-size: 18px;
+        text-align: center;
+        color: red;
+    }
 }
