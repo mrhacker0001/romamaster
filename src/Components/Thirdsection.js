@@ -4,7 +4,7 @@ import step from "../assets/Step.png"
 import step1 from "../assets/Step 2.png"
 import step2 from "../assets/Step 3.png"
 import step3 from "../assets/Step 4.png"
-import pattern from "../assets/Rectangle (16).png"
+// import pattern from "../assets/Rectangle (16).png"
 
 function Thirdsection() {
     return (
