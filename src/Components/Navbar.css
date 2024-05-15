@@ -45,3 +45,10 @@ nav button {
     border: none;
     background: rgba(247, 164, 0, 1);
 }
+
+@media (max-width:390px) {
+    .Navbar{
+        display: none;
+    }
+    
+}

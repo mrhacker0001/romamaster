@@ -135,7 +135,7 @@
     bottom: 20px;
 }
 
-.all{
+.all {
     width: 100%;
     height: auto;
     display: flex;
@@ -175,4 +175,198 @@
     font-weight: 400;
     line-height: 21.48px;
     color: rgba(18, 19, 61, 1);
+}
+
+
+
+
+@media (max-width:390px) {
+
+
+    .Thirdsection {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: #0f0f30;
+        padding-top: 5%;
+        align-items: center;
+        gap: 5%;
+    }
+
+
+    .Thirdsection h1 {
+        font-family: SF Pro Display;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 38.66px;
+        text-align: center;
+        color: #fff;
+        margin: 17% 0;
+    }
+
+    .Thirdsection h1 span {
+        font-family: SF Pro Display;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 38.66px;
+        text-align: center;
+        color: rgba(247, 164, 0, 1);
+    }
+
+    .cards {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        margin-top: 10%;
+    }
+
+    .card {
+        width: 90%;
+        height: 450px;
+        z-index: 1;
+        border-radius: 20px;
+        background: rgb(160, 160, 160);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+        padding-top: 0;
+    }
+
+    .card h1 {
+        margin-top: 12%;
+        font-family: SF Pro Display;
+        font-size: 19.62px;
+        font-weight: 600;
+        line-height: 24.69px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    .card ul {
+        font-family: SF Pro Display;
+        font-size: 16.82px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: left;
+        color: #fff;
+        margin-top: -10%;
+    }
+
+    .cart {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cart button {
+        width: 75%;
+        height: 35%;
+        background-color: #fff;
+        border-radius: 40px;
+        border: none;
+
+
+        font-family: SF Pro Display;
+        font-size: 19.62px;
+        font-weight: 500;
+        line-height: 36.24px;
+        text-align: center;
+        color: rgba(18, 19, 61, 1);
+    }
+
+    .cart span {
+        width: 100%;
+        height: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 35px;
+        font-family: SF Pro Display;
+        font-size: 19.62px;
+        font-weight: 500;
+        line-height: 23.41px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .cart span button {
+        width: 40%;
+        height: 70%;
+        background: rgb(189, 189, 189);
+
+        font-weight: 800;
+        color: #fff;
+    }
+
+    .three-cards {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 5%;
+        justify-content: space-between;
+    }
+
+    .three-cards img:nth-child(1) {
+        position: absolute;
+        left: -100px;
+        bottom: 20px;
+    }
+
+    .all {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7%;
+    }
+
+    .one-card {
+        position: relative;
+        width: 85%;
+        height: 170px;
+        background-color: #fff;
+        border-radius: 30px;
+        margin-bottom: 17%;
+        padding: 4%;
+    }
+
+    .one-card img {
+        position: absolute;
+        bottom: -30px;
+        left: -30px;
+    }
+
+    .one-card h1 {
+        font-family: SF Pro Display;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 26.25px;
+        text-align: left;
+        color: rgba(18, 19, 61, 1);
+        margin-bottom: 3%;
+        margin-top: 5%;
+
+
+    }
+
+    .one-card p {
+        font-family: SF Pro Display;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.48px;
+        text-align: left;
+        color: rgba(18, 19, 61, 1);
+    }
 }

@@ -91,3 +91,103 @@
     line-height: 30px;
     color: #fff;
 }
+
+
+@media (max-width:390px) {
+    .Footer {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: #0f0f30;
+    }
+
+    .Footer h1 {
+        font-family: SF Pro Display;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 38.66px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .middle-cart {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4% 10%;
+        gap: 20%;
+
+    }
+
+    .middle-cart span {
+        font-family: SF Pro Display;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 29.74px;
+        text-align: left;
+        color: #fff;
+    }
+
+    .middle-cart span b {
+        font-family: SF Pro Display;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 29.74px;
+        text-align: left;
+        color: #fff;
+    }
+
+    .middle-cart button {
+        margin-top: 10%;
+        width: 300px;
+        height: 80px;
+        border-radius: 50px;
+        background: rgba(247, 164, 0, 1);
+        border: none;
+        cursor: pointer;
+
+
+        font-family: SF Pro Display;
+        font-size: 21.71px;
+        font-weight: 500;
+        line-height: 25.91px;
+        text-align: center;
+        color: rgba(51, 51, 51, 1);
+    }
+
+
+    .bottom-cart {
+        width: 90%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    .bottom-cart img {
+        width: 70%;
+    }
+
+    .bottom-cart span {
+        font-family: SF Pro Display;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 31.72px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .bottom-cart b {
+        font-family: SF Pro Display;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 31.72px;
+        text-align: center;
+        color: #fff;
+    }
+}

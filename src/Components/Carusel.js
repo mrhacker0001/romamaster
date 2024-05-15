@@ -67,7 +67,7 @@ function Carousel() {
                         backgroundColor: '#0f0f30',
                     }}
                 >
-                    <h1 style={{ fontWeight: '700', fontSize: '36px', color: '#fff', marginBottom: '30%' }}>Отзывы о нашей работе</h1>
+                    <h1 className='hert' style={{ fontWeight: '700', fontSize: '36px', color: '#fff', marginBottom: '30%' }}>Отзывы о нашей работе</h1>
                 </Paper>
                 <SwipeableViews
                     axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
@@ -79,6 +79,7 @@ function Carousel() {
                         <div key={index} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 2s ease-in-out' }}>
                             {Math.abs(activeStep - index) <= 2 ? (
                                 <Box
+                                className='box'
                                     component="p"
                                     sx={{
                                         height: 555,
@@ -94,7 +95,7 @@ function Carousel() {
                                         padding: '5% 4%',
                                     }}
                                 >
-                                    <p style={{ fontFamily: 'SF Pro Display', lineHeight: '35px', fontSize: "24px", textAlign: "center" }}>{step.text}</p>
+                                    <p style={{ fontFamily: 'SF Pro Display', lineHeight: '35px', fontSize: "24px", textAlign: "center" } }>{step.text}</p>
                                     <h1>{step.ism}</h1>
                                 </Box>
                             ) : null}
@@ -103,6 +104,7 @@ function Carousel() {
                 </SwipeableViews>
 
                 <MobileStepper
+                className='mobile'
                     sx={{
                         backgroundColor: '#0f0f30',
                         width: '10%',

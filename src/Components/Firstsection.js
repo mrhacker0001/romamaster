@@ -2,16 +2,25 @@ import React, { useState } from 'react';
 import "./Firstsection.css";
 import img from "../assets/Group 2147.png";
 import skidka from "../assets/coupon 1.png";
+import logo from "../assets/logo.png"
+import img1 from "../assets/Group 1228.png"
+import img2 from "../assets/Group 1229.png"
+import img3 from "../assets/Group 1230.png"
 
 function Firstsection() {
     const [modalVisible, setModalVisible] = useState(false);
+    // const [modalVisiblee, setModalVisiblee] = useState(false);
 
     const handleModalToggle = () => {
         setModalVisible(!modalVisible);
     };
 
+    // const handleModalTogglee = () => {
+    //     setModalVisiblee(!modalVisiblee);
+    // };
     return (
         <div className='Firstsection'>
+            <img src={logo} alt="" className='logo' />
             <div className="left-card">
                 <h1>ВОДОСЧЕТЧИКИ ЧЕЛЯБИНСК</h1>
                 <span>Установка, замена счетчиков воды в Челябинске и Копейске</span>
@@ -23,6 +32,12 @@ function Firstsection() {
                     <li>водосчетчики челябинскводосчетчики челябинскводосчетчики челябинскводосчетчики челябинскводосчетчики челябинск  Выполнение работ в соответствие с ГОСТ и ТУ (технические условия)</li>
                 </ul>
                 <p>Оставить заявку на <a href='##' onClick={handleModalToggle}>скидку 25%</a></p>
+            </div>
+
+            <div className="middle">
+                <button><img src={img1} alt="..." /></button>
+                <button onClick={handleModalToggle}><img src={img2} alt="..." /></button>
+                <button onClick={handleModalToggle}><img src={img3} alt="..." /></button>
             </div>
 
             <div className="right-card">
@@ -49,9 +64,29 @@ function Firstsection() {
                 </div>
             </div>
 
-            <div className="modal-card" style={{ zIndex: modalVisible ? 1000 : -100 }}>
+            <div className="modal-card" style={{ zIndex: modalVisible ? 1000 : -1000 }}>
                 <div className="modal-cart">
                     <h1>25% скидка на услугу.</h1>
+                    <h2>До конца акции осталось <br />
+                        5 часов 10 минут.</h2>
+                    <input type="text" name='text' placeholder='Введите телефон' />
+                    <button onClick={handleModalToggle}>Перезвоните мне!</button>
+                </div>
+            </div>
+
+            <div className="modalst-card" style={{ zIndex: modalVisible ? 1000 : -1000 }}>
+                <div className="modalst-cart">
+                    <h1>Перезвоним вам в течение <span>3 минут</span> </h1>
+
+                    <input type="text" name='text' placeholder='Введите телефон' />
+                    <button onClick={handleModalToggle}>Перезвоните мне!</button>
+                </div>
+            </div>
+
+
+            <div className="modalst-card" style={{ zIndex: modalVisible ? 1000 : -1000 }}>
+                <div className="modalst-cart">
+                    <h1><span>Перезвоним вам в течение 3 минут</span> </h1>
                     <h2>До конца акции осталось <br />
                         5 часов 10 минут.</h2>
                     <input type="text" name='text' placeholder='Введите телефон' />

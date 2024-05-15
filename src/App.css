@@ -12,4 +12,5 @@
     align-items: center;
     background: linear-gradient(181.12deg, #2E2F62 1.92%, #13143D 98.08%);
     overflow: hidden;
+    z-index: 100;
 }

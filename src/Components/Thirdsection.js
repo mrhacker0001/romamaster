@@ -56,7 +56,6 @@ function Thirdsection() {
             </div>
 
             <div className="three-cards">
-                <img src={pattern} alt="..." />
                 <h1>Почему люди выбирают нашу компанию</h1>
                 <div className="all">
                     <div className="one-card">

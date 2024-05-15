@@ -35,13 +35,14 @@ function Secondsection() {
                 </div>
             </div>
 
+
             <div className="second-card">
                 <img src={right} alt="..." className='right-img'/>
                 <h1>Насколько выгодно использовать счетчики воды?</h1>
                 <img src={vector} alt="..." className='class'/>
                <div className="second">
                 <div className="left">
-                    <img src={top} alt="..." />
+                        <img src={top} alt="..."/>
                     <img src={bottom} alt="..." />
                     <div className="inline-card">
                         <h5>СЧЕТЧИК УСТАНОВЛЕН</h5>
